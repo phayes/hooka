@@ -29,7 +29,7 @@ include_file = (filepath) ->
   pathparts.pop()
   
   # There are two to three parts to the filename: section, (maybe) subsection, module-name
-  # TODO: Allow for infinite nesting
+  # Section may be util, hook, mod or eph . TODO: Enforce this, also enforce module naming
   section = pathparts[0]
   
   # Fill in any missing container objects on the hooka-runtime
